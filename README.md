@@ -50,5 +50,6 @@ This code prints all pizza orders bills. It has the below features
 
 ### Clean Code
 
-- Remove unnecessary spacing
+- Remove unnecessary spacing, comments, functions
 - Initialize with empty: string, array, or 0 for numbers.
+- Change if to switch

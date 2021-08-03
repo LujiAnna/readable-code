@@ -16,9 +16,8 @@ function order($pizza, $client)
         $address = 'BeCode, Office';
     }
 
-    $toPrint = 'A ';
-    $toPrint .= $pizza;
-    $toPrint .=   ' pizza should be sent to ' . $client . ". <br>The address: {$address}.";
+
+    $toPrint =   "A $pizza pizza should be sent to " . $client . ". <br>The address: {$address}.";
     echo $toPrint;
     echo '<br>';
     echo 'The bill is €' . $price . '.<br>';
@@ -26,10 +25,10 @@ function order($pizza, $client)
     echo 'Order finished.<br><br>';
 }
 
-function test($pizza_type)
-{
-    echo "Test: type is {$pizza_type}. <br>";
-}
+// function test($pizza_type)
+// {
+//     echo "Test: type is {$pizza_type}. <br>";
+// }
 
 function orderPrice($pizza_type)
 {
@@ -53,18 +52,10 @@ function orderPrice($pizza_type)
 
 function orderAll()
 {
-    $test = 0;
+    // $test = 0;
     order('calzone', 'koen');
     order('marguerita', 'manuele');
     order('golden', 'students');
 }
 
-function createOrder($orders)
-{
-    if ($orders) {
-        orderAll();
-    }
-}
-
-// Entry point
-createOrder(true);
+orderAll();
