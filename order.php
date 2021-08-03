@@ -3,26 +3,31 @@
 function order($pizza, $client)
 {
     $type = $pizza;
-    echo 'Creating new order... <br>';
 
     $price = orderPrice($type);
 
-    $address = 'unknown';
-    if ($client == 'koen') {
-        $address = 'Yatch, Antwerp';
-    } elseif ($client == 'manuele') {
-        $address = 'Somewhere, Belgium';
-    } elseif ($client == 'students') {
-        $address = 'BeCode, Office';
-    }
+    $address = clientAddress($client);
 
-
-    $toPrint =   "A $pizza pizza should be sent to " . $client . ". <br>The address: {$address}.";
-    echo $toPrint;
-    echo '<br>';
+    echo 'Creating new order... <br>';
+    $toPrint =   "A $pizza pizza should be sent to $client ." . " <br>The address: {$address}.";
+    echo $toPrint . '<br>';
     echo 'The bill is €' . $price . '.<br>';
-
     echo 'Order finished.<br><br>';
+}
+
+
+function clientAddress($client)
+{
+    $address = 'unknown';
+
+    switch ($client) {
+        case 'koen';
+            return $address = 'Yatch, Antwerp';
+        case 'manuele';
+            return $address = 'Somewhere, Belgium';
+        case 'students';
+            return $address = 'BeCode, Office';
+    }
 }
 
 // function test($pizza_type)
