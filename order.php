@@ -38,31 +38,18 @@ function orderPrice($pizza_type)
 {
     $cost = '';
 
-    // switch ($pizza_type) {
-    //     case 'marguerita';
-    //         return $cost = 5;
-    //     case 'golden';
-    //         return $cost = 100;
-    //     case 'calzone';
-    //         return $cost = 10;
-    //     case 'hawai';
-    //         return $cost = 100;
-    // }
-
-    if ($pizza_type == 'marguerita') {
-        $cost = 5;
-    } else {
-        if ($pizza_type == 'golden') {
-            $cost = 100;
-        }
-        if ($pizza_type == 'calzone') {
-            $cost = 10;
-        }
-        if ($pizza_type == 'hawai') {
+    switch ($pizza_type) {
+        case 'marguerita';
+            return $cost = 5;
+        case 'golden';
+            return $cost = 100;
+        case 'calzone';
+            return $cost = 10;
+        case 'hawai';
             throw new Exception('Item does not exist');
-        }
     }
-    return $cost;
+
+    throw new Exception('Unknown pizza type');
 }
 
 function orderAll()
