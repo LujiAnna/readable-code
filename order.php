@@ -18,16 +18,15 @@ function order($pizza, $client)
 
 function clientAddress($client)
 {
-    $address = 'unknown';
-
     switch ($client) {
-        case 'koen';
+        case 'koeni';
             return $address = 'Yatch, Antwerp';
         case 'manuele';
             return $address = 'Somewhere, Belgium';
         case 'students';
             return $address = 'BeCode, Office';
     }
+    return $address = 'unknown';
 }
 
 // function test($pizza_type)
@@ -38,6 +37,8 @@ function clientAddress($client)
 function orderPrice($pizza_type)
 {
     $cost = '';
+
+
 
     if ($pizza_type == 'marguerita') {
         $cost = 5;
