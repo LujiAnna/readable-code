@@ -4,8 +4,7 @@ function order($pizza, $client)
 {
     $type = $pizza;
     echo 'Creating new order... <br>';
-    $toPrint = 'A ';
-    $toPrint .= $pizza;
+
     $price = orderPrice($type);
 
     $address = 'unknown';
@@ -17,17 +16,14 @@ function order($pizza, $client)
         $address = 'BeCode, Office';
     }
 
+    $toPrint = 'A ';
+    $toPrint .= $pizza;
     $toPrint .=   ' pizza should be sent to ' . $client . ". <br>The address: {$address}.";
     echo $toPrint;
     echo '<br>';
     echo 'The bill is €' . $price . '.<br>';
 
-    echo "Order finished.<br><br>";
-}
-
-function totalPrice($price)
-{
-    return $price;
+    echo 'Order finished.<br><br>';
 }
 
 function test($pizza_type)
