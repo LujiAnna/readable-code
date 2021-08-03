@@ -16,8 +16,8 @@ This code prints all pizza orders bills. It has the below features
 - [x] Understand the given code
 - [x] Write a good README.md
 - [x] Follow Code Principles: Function, Function names, write [TODOS](https://dev.to/razbakov/todo-in-code-b) or issues, Testing & Commiting
-- Use PHP code standards like [PSR12](https://www.php-fig.org/psr/psr-12/)
-- Read article on how to write a [clean code]() and use [Code Guides](https://basecodefieldguide.com/)
+- [x] Use PHP code standards like [PSR12](https://www.php-fig.org/psr/psr-12/)
+- [x] Read article on how to write a [clean code](https://dev.to/gonedark/writing-clean-codes) and use [Code Guides](https://basecodefieldguide.com/)
 - Code sniffer (Do not use this now). This can auto-fix your code or give hints on how to fit it yourself.
 
 ## Instructions
@@ -38,7 +38,7 @@ This code prints all pizza orders bills. It has the below features
 ### Variables
 
 - Identify variables, variable names, parameters and arguments
-- change variable names
+- change variable names to clearly written ones
 - Naming: fix typos, use Caps Locks where needed eg in people's names, address names
 
 ### [Basic Code Standards](https://www.php-fig.org/psr/psr-1/)
@@ -47,3 +47,8 @@ This code prints all pizza orders bills. It has the below features
 - Class constants MUST be declared in all upper case with underscore separators
 - naming convention is used SHOULD be applied consistently within a reasonable scope
 - Code MUST use an indent of 4 spaces for each indent level, and MUST NOT use tabs for indenting.
+
+### Clean Code
+
+- Remove unnecessary spacing
+- Initialize with empty: string, array, or 0 for numbers.

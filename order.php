@@ -26,9 +26,9 @@ function order($pizza, $client)
     echo "Order finished.<br><br>";
 }
 
-function totalPrice($p)
+function totalPrice($price)
 {
-    return $p;
+    return $price;
 }
 
 function test($pizza_type)
@@ -38,24 +38,22 @@ function test($pizza_type)
 
 function orderPrice($pizza_type)
 {
-    $cst = 'unknown';
+    $cost = '';
 
     if ($pizza_type == 'marguerita') {
-        $cst = 5;
+        $cost = 5;
     } else {
         if ($pizza_type == 'golden') {
-            $cst = 100;
+            $cost = 100;
         }
-
         if ($pizza_type == 'calzone') {
-            $cst = 10;
+            $cost = 10;
         }
-
         if ($pizza_type == 'hawai') {
-            throw new Exception('Computer says no');
+            throw new Exception('Item does not exist');
         }
     }
-    return $cst;
+    return $cost;
 }
 
 function orderAll()
@@ -63,7 +61,6 @@ function orderAll()
     $test = 0;
     order('calzone', 'koen');
     order('marguerita', 'manuele');
-
     order('golden', 'students');
 }
 
