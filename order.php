@@ -1,6 +1,5 @@
 <?php
 
-// fw = for who
 function order($pizza, $client)
 {
     $type = $pizza;
@@ -68,8 +67,6 @@ function createOrder($orders)
 {
     if ($orders) {
         orderAll();
-    } else {
-        // Should not do anything when false
     }
 }
 
