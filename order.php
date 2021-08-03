@@ -9,8 +9,8 @@ function order($pizza, $client)
     $address = clientAddress($client);
 
     echo 'Creating new order... <br>';
-    $toPrint =   "A $pizza pizza should be sent to $client ." . " <br>The address: {$address}.";
-    echo $toPrint . '<br>';
+    echo "A $pizza pizza should be sent to $client ." . " <br>The address: {$address}.";
+    echo '<br>';
     echo 'The bill is €' . $price . '.<br>';
     echo 'Order finished.<br><br>';
 }
@@ -19,7 +19,7 @@ function order($pizza, $client)
 function clientAddress($client)
 {
     switch ($client) {
-        case 'koeni';
+        case 'koen';
             return $address = 'Yatch, Antwerp';
         case 'manuele';
             return $address = 'Somewhere, Belgium';
@@ -38,7 +38,16 @@ function orderPrice($pizza_type)
 {
     $cost = '';
 
-
+    // switch ($pizza_type) {
+    //     case 'marguerita';
+    //         return $cost = 5;
+    //     case 'golden';
+    //         return $cost = 100;
+    //     case 'calzone';
+    //         return $cost = 10;
+    //     case 'hawai';
+    //         return $cost = 100;
+    // }
 
     if ($pizza_type == 'marguerita') {
         $cost = 5;
