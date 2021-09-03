@@ -29,11 +29,6 @@ function clientAddress($client)
     return $address = 'unknown';
 }
 
-// function test($pizza_type)
-// {
-//     echo "Test: type is {$pizza_type}. <br>";
-// }
-
 function orderPrice($pizza_type)
 {
     $cost = '';

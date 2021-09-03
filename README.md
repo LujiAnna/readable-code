@@ -18,7 +18,7 @@ This code prints all pizza orders bills. It has the below features
 - [x] Follow Code Principles: Function, Function names, write [TODOS](https://dev.to/razbakov/todo-in-code-b) or issues, Testing & Commiting
 - [x] Use PHP code standards like [PSR12](https://www.php-fig.org/psr/psr-12/)
 - [x] Read article on how to write a [clean code](https://dev.to/gonedark/writing-clean-codes) and use [Code Guides](https://basecodefieldguide.com/)
-- Code sniffer (Do not use this now). This can auto-fix your code or give hints on how to fit it yourself.
+- [x] Code sniffer (Do not use this now). This can auto-fix your code or give hints on how to fit it yourself. Install php-code-sniffer extension for VSCode in the end.
 
 ## Instructions
 
@@ -26,7 +26,7 @@ This code prints all pizza orders bills. It has the below features
 - Discuss solution in group (2)
 - Tips to share
 
-## Tips Below
+## Tips : General & Syntax
 
 ### Functions
 
@@ -34,12 +34,15 @@ This code prints all pizza orders bills. It has the below features
 - Change file name to main functionality (order)
 - Avoid usage of mixed _, small, capital letter at same time. As `_` is mostly used with PHP functions, avoid it in naming your functions
 - Identify what all functions do, and change their names to their main tasks
+- Every function should aim to focus on one thing
+- Return early where you can
 
 ### Variables
 
 - Identify variables, variable names, parameters and arguments
-- change variable names to clearly written ones
+- Write clear variable and function names (be explicit!)
 - Naming: fix typos, use Caps Locks where needed eg in people's names, address names
+- Avoid useless variables
 
 ### [Basic Code Standards](https://www.php-fig.org/psr/psr-1/)
 
@@ -51,5 +54,20 @@ This code prints all pizza orders bills. It has the below features
 ### Clean Code
 
 - Remove unnecessary spacing, comments, functions, variable
+- Remove unused code (if commented, add why if possible)
 - Initialize with empty: string, array, or 0 for numbers.
-- Change if to switch
+- IF: Omit else in an if if possible. Change if to switch if applicable.
+
+### Syntax
+
+- Use camel case for variables and functions
+- Watch where the curly bracket should go
+- Use whitespace wisely
+- Adhere to PSR12
+
+### Geneal
+
+- Leverage errors to your advantage (create a custom one for unwanted situations)
+- Avoid nesting if unneeded
+- Test after every refactor / change
+-
